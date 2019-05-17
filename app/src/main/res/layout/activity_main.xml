@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#EEEEEE">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10sp"
+        android:paddingBottom="10sp"
+        android:orientation="horizontal"
+        android:background="#4CAF50">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="국어사전"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/search_word"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_weight="1"
+                android:hint="단어를 검색하세요"/>
+
+            <Button
+                android:id="@+id/search_button"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:background="@drawable/search"/>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/wordlistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp">
+        </ListView>
+
+    </LinearLayout>
+
+</LinearLayout>

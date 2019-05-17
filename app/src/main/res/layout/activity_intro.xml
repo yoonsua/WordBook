@@ -4,15 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".wordquizview"
+    tools:context=".Intro"
     android:orientation="vertical"
-    android:background="#F1F1F1">
+    android:background="#4CAF50">
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/mainlogo"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-
-    </LinearLayout>
+        android:layout_height="match_parent"
+        android:text="국어사전"
+        android:textSize="30sp"
+        android:textColor="#fff"
+        android:gravity="center"/>
 
 </LinearLayout>
